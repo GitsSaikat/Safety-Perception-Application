@@ -132,7 +132,7 @@ if selected == "🤖 Model Training, Evaluation & Explanations":
             st.pyplot()
 
 # Predict Percieved Safety
-if selected == "🔮 Predict Percieved Safety":
+if selected == "🔮 Predict Perceived Safety":
     st.header("🔮 Predict Percieved Safety")
     st.write("Please provide the following information to predict Percieved Safety for transport:")
     
