@@ -1,3 +1,5 @@
 streamlit
 shap
 matplotlib
+seaborn
+sklearn
