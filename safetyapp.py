@@ -29,7 +29,7 @@ st.title("Evaluating Safety Perception on Commuting ")
 
 # Sidebar section
 with st.sidebar:
-    st.image("logo.png", use_column_width=True, caption="Your Company Name")
+    st.image("logo.png", use_container_width=True, caption="Safety Perception")
     st.markdown("---") 
     selected = st.selectbox(
         "Navigation",
