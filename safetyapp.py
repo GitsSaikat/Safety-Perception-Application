@@ -27,16 +27,19 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, r
 st.set_page_config(page_title="Evaluating Safety Perception on Commuting App", layout='wide')
 st.title("Evaluating Safety Perception on Commuting ")
 
-# Sidebar Navigation
-selected = st.sidebar.selectbox(
-    "Navigation",
-    [
-        "📊 Data Overview",
-        "🔍 Exploratory Data Analysis",
-        "🤖 Model Training, Evaluation & Explanations",
-        "🔮 Predict Percieved Safety"
-    ]
-)
+# Sidebar section
+with st.sidebar:
+    st.image("logo.png", use_column_width=True, caption="Your Company Name")
+    st.markdown("---") 
+    selected = st.selectbox(
+        "Navigation",
+        [
+            "📊 Data Overview",
+            "🔍 Exploratory Data Analysis",
+            "🤖 Model Training, Evaluation & Explanations",
+            "🔮 Predict Perceived Safety"
+        ]
+    )
 
 # Data Overview
 if selected == "📊 Data Overview":
